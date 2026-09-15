@@ -8,7 +8,7 @@ from pypdf import PdfReader
 
 # --- المفاتيح الخاصة بك ---
 # ضع توكن تلغرام الخـاص بك من BotFather بين القوسين
-TELEGRAM_TOKEN = "ضع_هنا_توكن_تلغرام_من_BOTFATHER" 
+TELEGRAM_TOKEN = "8709483071:AAHxknML6S_Z6BUd8KHp07gbCCxEPfmhaV4" 
 
 # يقرأ المفتاح تلقائياً من متغيرات البيئة في Render لأمان أعلى ولتجنب حظر GitHub
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AQ.Ab8RN6JbKyX1LbcYCCaqDldiePzGfD8YPqZDvkxaimNbTfGioQ")
