@@ -93,7 +93,13 @@ async def handle_document(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # تشغيل البوت
 def main():
-    app = Application.builder().token(TELEGRAM_TOKEN).build()
+   app = (
+        Application.builder()
+        .token(TELEGRAM_TOKEN)
+        .connect_timeout(30.0)
+        .read_timeout(30.0)
+        .build()
+    )
 
     # تسجيل الأوامر والمعالجات
     app.add_handler(CommandHandler("start", start_command))
