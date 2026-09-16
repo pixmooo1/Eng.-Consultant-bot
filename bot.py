@@ -93,7 +93,7 @@ async def handle_document(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # تشغيل البوت
 def main():
-   app = (
+    app = (
         Application.builder()
         .token(TELEGRAM_TOKEN)
         .connect_timeout(30.0)
@@ -106,8 +106,9 @@ def main():
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text_message))
     app.add_handler(MessageHandler(filters.Document.ALL, handle_document))
 
-    print("البوت يعمل الآن على تلغرام... اضغط Ctrl+C للإيقاف.")
+    print("البوت يعمل الآن على تلغرام...")
     app.run_polling()
+
 
 if __name__ == "__main__":
     main()
